@@ -1,0 +1,73 @@
+Question 1:
+You have an idea for a prompt. You haven't written your prompt yet. You think that be done better. What do you do?
+
+Correct Answer:
+A: Write the first version of your prompt. Then test it and see how it performs. Then iterate and build up your final prompt through several iterations.
+
+Explanation: Iterative prompt improvement is a great way to gradually build up to the perfect prompt.
+
+Other Answers:
+B: Sit over a blank screen and try to imagine the final version of your prompt.
+
+Explanation: This answer is a recipe for writer's block.
+
+
+C: Tell your manager that you are having trouble with writing the prompt.
+
+Explanation: Surrendering like this is not a good idea.
+
+
+Question 2:
+You have written and tested a prompt. But it's not working exactly as you need. What do you do?
+
+Correct Answer:
+A: Iteratively improve your prompt until it does what you need it to do. 
+In some cases, I have had to rewrite the whole prompt from scratch. I would re-write it for the purpose of taking a new approach. But even if you were to re-write your prompt from scratch, you still don't lose the lessons that you learnt from the older iterations.
+
+Explanation: Iterative prompt improvement is a great way to finally arrive at good solution.
+
+Other Answers:
+B: Tell your manager that you tried your best and that's all that matters.
+
+Explanation: Not a good look. 
+
+C: Pretend that it works fine and tell your manager that you have completed the task.
+
+Explanation: Sooner or later, your team will find out.
+
+
+Question 3:
+You have written a prompt with instructions for the LLM to complete a task. But it doesn't always give the right answer. What should you try on your next iteration of the prompt?
+
+Correct Answer:
+A: Get the LLM to explain its reasoning. For example, you can break the task down into subtasks and get the LLM to answer those first.
+
+Explanation: Use a method similar to our chain-of-thought and hallucination mitigation examples. We instructed the LLM to answer smaller questions as stepping stones to the main question. And to explain its reasoning "step by step".
+
+Other Answers:
+B: Flip the desk over and walk away.
+
+Explanation: Not a good idea when working from home.
+
+C: Tell your manager that everything works fine. And get aggressive when anyone tries to report a bug.
+
+Explanation: Not a good idea for your short term career growth.
+
+
+
+Question 4:
+When mitigating hallucination, what is the main technique that we are employing?
+
+Correct Answer:
+A: We get the LLM to explain what it knows about the model that we are asking about. Before it gives us an answer. It's reflecting on its own knowledge.
+
+Explanation: Our prompt asks the LLM what it knows about our question
+
+Other Answers:
+B: XML Tags, Triple backticks, and other delimiters
+
+Explanation: That's not the main one for mitigating halucination
+
+C: We ask the LLM to reflect on what the question is really asking.
+
+Explanation: Try the prompt without this. Does it still mitigate hallucination?

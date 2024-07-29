@@ -1,0 +1,36 @@
+Question 1:
+How do we control the exact structure of the JSON that the LLM outputs?
+
+Correct Answer:
+A: By specifying a template
+
+Explanation: Yes, we specify a template in the prompt
+
+Other Answers:
+B: By asking nicely and writing "pretty please"
+
+Explanation: We specify a template in the prompt
+
+C: Use the secret code words and symbols
+
+Explanation: We specify a template in the prompt
+
+
+
+Question 2:
+We have wrapped our call to the OpenAI API in a function. We have decorated the function with the @backoff decorator. Why have we done that?
+
+Correct Answer:
+A: Because OpenAI have imposed a rate limit on the API. We get a certain number of "Tokens Per Minute" (TPM). If we make too many API calls in quick succession, then we will get a rate limit error. We use the @backoff decorator to implement exponential backoff. Exponential backoff retries the API at exponentially increasing time intervals.
+
+Explanation: Exponential backoff waits and then retries the API call. You can read about the rate limit error here: https://help.openai.com/en/articles/6897202-ratelimiterror
+
+Other Answers:
+B: You look like a better programmer when you have complicated code. If anyone asks, make sure to use phrases like "it's simple", and "you need to understand AI".
+
+Explanation: Although these phrases are a great way to anger your coworkers, this is the wrong answer. We are actually trying to handle the Rate Limit Error. Exponential backoff waits and then retries the API call. You can read about the rate limit error here: https://help.openai.com/en/articles/6897202-ratelimiterror
+
+C: The instructor just slipped in some extra complexity into the course. He didn't explain it either.
+
+Explanation: If I remember correctly, I did explain it. We are actually trying to handle the Rate Limit Error. Exponential backoff waits and then retries the API call. You can read about the rate limit error here: https://help.openai.com/en/articles/6897202-ratelimiterror
+

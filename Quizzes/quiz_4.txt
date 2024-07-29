@@ -1,0 +1,25 @@
+Question 1:
+The messages list can contain three types of messages. What are they?
+
+Correct Answer:
+A:
+"system" - This holds the system prompt.
+"user" - These are prompts that the user sent to the chatbot.
+"assistant" - These are the chatbot's replies.
+
+Explanation: As mentioned the start of notebook 2.
+
+Other Answers:
+B:
+"system" - This holds the system prompt.
+"human" - These are prompts that the user sent to the chatbot.
+"ai" - These are the chatbot's replies.
+
+Explanation: The correct names are "user" and "assistant", not "human" and "ai". Revise the start of notebook 2.
+
+C:
+"directive" - This holds the system prompt.
+"user" - These are prompts that the user sent to the chatbot.
+"assistant" - These are the chatbot's replies.
+
+Explanation: It's called a "system" prompt. Revise the start of notebook 2.

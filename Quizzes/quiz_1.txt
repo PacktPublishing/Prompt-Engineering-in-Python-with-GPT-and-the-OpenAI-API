@@ -1,0 +1,56 @@
+Question 1:
+I introduced LLMs as machines that predict the next word in a sequence. On the following slide, I explained that rather than predicting the word, they predict the next token. What is a token as explained in the video?
+
+Correct Answer:
+A: A part of a word. For example, the full word "lamb ", might be made up of the tokens "lam" and "b ". Tokens may include spaces and puctuation.
+
+Explanation: A token is a part of a word. Tokens may include spaces and puctuation.
+
+Other Answers:
+B: A token is a word.
+
+Explanation: Not in LLMs. Some older Natural Language Processing (NLP) techniques might define each word to be a token. Not so for LLMs of the current generation.
+
+
+C: A token is a blockchain asset.
+
+Explanation: This "answer" is not related to LLMs.  
+
+
+Question 2:
+What is the difference between base LLMs versus instruction tuned LLMs?
+
+
+Correct Answer:
+A: Base LLMs: LLMs start out as Base LLMs, where they just learn to predict the next token in a sequence.
+Instruction Tuned LLMs: Base LLMs are then instruction tuned to provide the output that we ﬁnd useful. Rather than just writing any plausible text, instruction tuned LLMs will output the text that we ask for.
+
+Explanation: This is the correct correct answer.
+
+Other Answers:
+B: Base LLMs are "based", whereas Instruction Tuned LLMs are for frogs.
+
+Explanation: This is a gag and it's wrong.
+
+C: Instruction Tuned LLMs: LLMs start out as Instruction Tuned LLMs, where they just learn to predict the next instruction/tune in a sequence.
+Base LLMs: LLMs start out as Instruction Tuned LLMs, and then they get "based".
+
+Explanation: This is another made up gag answer.
+
+
+Question 3:
+Will AI take your job?
+
+Correct Answer:
+A: Maybe my current role. But I will be prepared to step into a new, higher paying role. 
+
+Explanation: Yup. This course will put you on the right track to step into a new, higher paying role.
+
+Other Answers:
+B: Nah, my employer will keep paying me while I do meaningless work that nobody will ever need. 
+
+Explanation: Maybe somewhere. Some employers try "manage out" useless employees rather than fire them.  This usually happens in countries where labour laws make it hard to fire employees after their probationary period.
+
+C: Yes. I will be forced onto a measly Universal Basic Income for the rest of my life.
+
+Explanation: This course will put you on the right track to step into a new, higher paying role. So you won't have to scrape by on welfare.

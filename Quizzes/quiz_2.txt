@@ -1,0 +1,50 @@
+Question 1:
+In every prompt, we instruct ChatGPT to play the role of an expert. Why do we do this?
+
+Correct Answer:
+A: We sometimes get better answers when we instruct ChatGPT to assume the role of an expert. It also suppresses replies that start with "As an AI Language model...."
+
+Explanation: This is the correct answer. When we want expert level advice, we don't want it to accidentally play the role of a newbie.
+
+Other Answers:
+B: Because it's fun.
+
+Explanation: Although it's fun, there is also a deeper meaning to the role play.
+
+C: Not sure. Maybe this is something that you just made up to make things more complicated?
+
+Explanation: Nope. This is a gag answer.
+
+
+Question 2:
+The prompts also instruct ChatGPT to be enthusiastic and encouraging, to end every message with a smile ":-)", and to call the user "bro". Why do they do that?
+
+Correct Answer:
+A: So that the user feels good while learning. After using these prompts for long enough, you will feel good about yourself.
+
+Explanation: Yup. Exactly.
+
+Other Answers:
+B: No reason. Our instructor is crazy.
+
+Explanation: Nope. There is actually a reason.
+
+C: To make the LLM feel good about itself.
+
+Explanation: That's not the intention. However, we will cover a technique later in the course called "EmotionPrompt", where we may get better answers from adding emotional language into our prompts.
+
+Question 3:
+Will these personal coach prompts work with other LLMs?
+
+Correct Answer:
+A: Yes. As long as you are asking it to teach you something that was included in its training data.
+
+Explanation: Most LLMs are good at role play, and writing their knowledge. Some LLMs, GPT-4 for example, might have been trained on more data. Bigger LLMs might, in theory, remember more of their training data. However, some smaller LLMs, ORCA-2 for example, might have been trained on a smaller set of higher quality data.
+
+Other Answers:
+B: No.
+
+Explanation: Most LLMs are good at role play, and writing their knowledge. Some LLMs, GPT-4 for example, might have been trained on more data. Bigger LLMs might, in theory, remember more of their training data. However, some smaller LLMs, ORCA-2 for example, might have been trained on a smaller set of higher quality data.
+
+
+

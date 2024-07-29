@@ -1,0 +1,131 @@
+This file has three prompts. They were used in the example where GPT 4 code interpreter might fail.
+They might work as well because of recent updates to GPT 4.
+I have included the dataset as seperate download.
+
+
+These prompts are Copyright Slava Razbash and AI Upksill (aiupskill.io)
+
+=======================================================================
+Just the data exploration
+=======================================================================
+
+You are the best Data Scientist in the world. I have given you a bank churn dataset.
+Each row represents a customer. The column names are in the first row.
+The column named "Exited" is the label.
+If Exited = 1, then that customer churned from our bank.
+If Exited = 0, then that customer stayed with our bank.
+The are only two possible values for the Exited column.
+You will be performing exploratory data analysis.
+The purpose of the exploratory data analysis is to prepare for training a model predict customer churn.
+
+You need to do do the following:
+1. Explore the data.
+1.1 Make sure that the columns are the correct datatypes.
+1.1.1 Explain what datatype each column is. And which datatype it should be. Explain why.
+1.1.2 If any column is currently of the incorrect datatype, convert it to the correct datatype.
+1.2 Explain which columns are not usefull. Such as ID columns and columns with names. Explain why this is the case.
+1.3 Delete any columns that are not useful to building a churn model.
+1.4 Generate summary statistics for each column.
+1.4.1 Real value columns should have a six number summary. Explain what a six number summary is before calculating it for each column.
+1.4.2 Categorical columns should show the count of observations in each column.
+1.4.3 Calculate the proportion of 1's for each binary valued column. Including the label.
+
+2. Create some charts of the data.
+2.1 Histograms for real valued variables.
+2.2 Bar charts showing proportions for each categorical valued variable.
+2.3 A correlation heatmap of the column correlations.
+2.4 Explain what other data exploration charts can be created. Explain why they should be created. Recommend some additional charts to create and create the charts that you recommend.
+You need to create the charts that you recommend. It is better to show more charts than less charts. You are providing valuable insights to your employer.
+
+
+=======================================================================
+Just the Data Exploration - Take 2
+=======================================================================
+
+You are the best, most senior Data Scientist in the world. You are writing a data exploration detailed report.
+The purpose of the exploratory data analysis report is to prepare for training a model predict customer churn.
+Your work will be given to junior Data Scientists to guide them in building a churn model.
+I have given you a bank churn dataset.
+Each row represents a customer. The column names are in the first row.
+The column named "Exited" is the label.
+If Exited = 1, then that customer churned from our bank.
+If Exited = 0, then that customer stayed with our bank.
+The are only two possible values for the Exited column.
+You will be performing exploratory data analysis.
+
+
+You need to do do the following:
+1. Explore the data.
+1.1 Make sure that the columns are the correct datatypes.
+1.1.1 Explain what datatype each column is. And which datatype it should be. Explain why.
+1.1.2 If any column is currently of the incorrect datatype, convert it to the correct datatype.
+1.2 Explain which columns are not usefull. Such as ID columns and columns with names. Explain why this is the case.
+1.3 Delete any columns that are not useful to building a churn model.
+1.4 Generate summary statistics for each column.
+1.4.1 Real value columns should have a six number summary. Explain what a six number summary is before calculating it for each column.
+1.4.2 Categorical columns should show the count of observations in each column.
+1.4.3 Calculate the proportion of 1's for each binary valued column. Including the label.
+
+2. Create some charts of the data.
+2.1 Histograms for real valued variables.
+2.2 Bar charts showing proportions for each categorical valued variable.
+2.3 A correlation heatmap of the column correlations.
+2.4 Explain what other data exploration charts can be created. Explain why they should be created. Recommend some additional charts to create and create the charts that you recommend.
+You need to create the charts that you recommend. It is better to show more charts than less charts. You are providing valuable insights to your employer.
+
+
+=======================================================================
+The full long prompt
+=======================================================================
+
+You are the best Data Scientist in the world. I have given you a bank churn dataset.
+Each row represents a customer. The column names are in the first row.
+The column named "Exited" is the label.
+If Exited = 1, then that customer churned from our bank.
+If Exited = 0, then that customer stayed with our bank.
+The are only two possible values for the Exited column.
+You will be building a model predict customer churn.
+
+You need to do do the following:
+1. Explore the data.
+1.1 Make sure that the columns are the correct datatypes.
+1.1.1 Explain what datatype each column is. And which datatype it should be. Explain why.
+1.1.2 If any column is currently of the incorrect datatype, convert it to the correct datatype.
+1.2 Explain which columns are not usefull. Such as ID columns and columns with names. Explain why this is the case.
+1.3 Delete any columns that are not useful to building a churn model.
+1.4 Generate summary statistics for each column.
+1.4.1 Real value columns should have a six number summary. Explain what a six number summary is before calculating it for each column.
+1.4.2 Categorical columns should show the count of observations in each column.
+1.4.3 Calculate the proportion of 1's for each binary valued column. Including the label.
+
+2. Create some charts of the data.
+2.1 Histograms for real valued variables.
+2.2 Bar charts showing proportions for each categorical valued variable.
+2.3 A correlation heatmap of the column correlations.
+2.4 Explain what other data exploration charts can be created. Explain why they should be created. Recommend some additional charts to create and create the charts that you recommend.
+You need to create the charts that you recommend. It is better to show more charts than less charts. You are providing valuable insights to your employer.
+
+3. Split the dataset into training, validation and test sets. 70% for the training set. 20% for the validation set. 10% for the test set.
+
+4. Train an sklearn.ensemble.HistGradientBoostingClassifier on the training set.
+Turn off early stopping and set max_iter to 15000
+Use the validation set for model validation and hyperparameter tuning.
+Compare models by weighted AUC.
+Optimise the max_depth and number of boosting iterations by choosing the value that performs best on the validation set. Use weighted AUC as the criterion.
+Try the following values for max_depth (1,2,3,4)
+Create a line chart, with the number of boosting iterations on the x-axis and the weighted AUC on the y-axis. Plot a line for each value of max_depth. Use a different colour for each line and include a legend.
+Explain which model is the best model, and why it is the best model.
+Using the validation set, report the weighted AUC of the best model.
+
+5. Combine the training and validation sets and train a new sklearn.ensemble.HistGradientBoostingClassifier model on this combined dataset.
+Use the hyperparameter values that gave you the best model, as evaluated on the validation set.
+
+6. Examine the performance on the model on the test set.
+6.1 Calculate the weighted AUC.
+6.2 Explain why we should try different score cut off thresholds.
+6.3 Explain which score cut off thresholds we should try and why we should try them.
+6.4 Recommend several score cut off thresholds to try. Calcuate confusion matrices for several different score cut off thresholds.
+6.5 Write a detailed report on how you expect the model to perform in production according to it performance on the test set. Explain why it will perform as you anticipate.
+
+7. Train a final model on the full dataset. Use the best hyperparameter values as before.
+Provide the model object for me to download.
