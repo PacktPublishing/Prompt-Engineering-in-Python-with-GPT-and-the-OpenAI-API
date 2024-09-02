@@ -3,7 +3,7 @@
 ### and use the @backoff.on_exception() decorator.
 import backoff
 
-@backoff.on_exception(backoff.expo, openai.error.RateLimitError)
+@backoff.on_exception(backoff.expo, openai.RateLimitError)
 def query_llm_single_turn(prompt, model="gpt-3.5-turbo", temperature=0, **kwargs):
     """
     This function queries the openai ChatCompletion API, with exponential backoff.
@@ -18,7 +18,7 @@ def query_llm_single_turn(prompt, model="gpt-3.5-turbo", temperature=0, **kwargs
     """
     ##Set up the messages list
     messages = [{"role": "user", "content": prompt}]
-    return openai.ChatCompletion.create(
+    return openai.chat.completions.create(
         model=model,    
         messages=messages,
         temperature=temperature,
